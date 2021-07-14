@@ -423,7 +423,7 @@ MonoBehaviour:
     - SampleScene
     AllowRuntimeSceneChanges: 0
     NetworkPrefabs:
-    - Prefab: {fileID: 6075370372871252734, guid: 35eeaab9537ac6e46af847265a5808f0, type: 3}
+    - Prefab: {fileID: 7293311900886200825, guid: f2e3fa645c8c7994aa9cccbb94a776a9, type: 3}
       PlayerPrefab: 0
     PlayerPrefabHash:
       id: 0
@@ -453,60 +453,3 @@ MonoBehaviour:
     version: 1
     00000000:
       type: {class: , ns: , asm: }
---- !u!1001 &1211503711944898022
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662436, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211503713191662438, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}
-      propertyPath: m_Name
-      value: Square
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 16d56b026d5aedd4b95b88403355b75c, type: 3}

@@ -21,6 +21,7 @@ public class NetworkingPlayer : NetworkBehaviour
             if (NetworkManager.Singleton.IsServer)
             {
                 var randomPosition = GetRandomPositionOnPlane();
+                Debug.Log(randomPosition);
                 transform.position = randomPosition;
                 Position.Value = randomPosition;
             }
@@ -38,7 +39,7 @@ public class NetworkingPlayer : NetworkBehaviour
 
         static Vector2 GetRandomPositionOnPlane()
         {
-            return new Vector2(Random.Range(-3f, 3f), Random.Range(-3f, 3f));
+            return new Vector2(Random.Range(-10, 10), Random.Range(-5, 5));
         }
 
         void Update()

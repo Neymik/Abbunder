@@ -47,7 +47,7 @@ public class NetworkingManager : MonoBehaviour
             if (NetworkManager.Singleton.ConnectedClients.TryGetValue(NetworkManager.Singleton.LocalClientId,
                 out var networkedClient))
             {
-                var player = networkedClient.PlayerObject.GetComponent<HelloWorldPlayer>();
+                var player = networkedClient.PlayerObject.GetComponent<NetworkingPlayer>();
                 if (player)
                 {
                     player.Move();
