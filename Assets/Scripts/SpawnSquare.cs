@@ -19,12 +19,9 @@ public class SpawnSquare : MonoBehaviour
 
         bool objFinded = WorldObjects.getObjFromDict(intX, intY, obj);
 
-        Debug.Log(objFinded);
-        //GameObject selected = WorldObjects.WorldMatrix[intX][intY];
-
         if (!objFinded) {
 
-            WorldObjects.Add(intX, intY, obj); //WorldMatrix[intX][intY] = 
+            WorldObjects.Add(intX, intY, obj);
 
         } else {
 
@@ -32,8 +29,6 @@ public class SpawnSquare : MonoBehaviour
 
         }
 
-        
-        
 
     }
 
