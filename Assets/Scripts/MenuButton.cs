@@ -12,10 +12,13 @@ public class MenuButton : MonoBehaviour
   public void join () {
     IPManager.ip = ip.text;
     IPManager.name = name.text;
+    IPManager.game = "join";
     Application.LoadLevel("SampleScene");
+
   }
 
   public void create () {
+    IPManager.game = "host";
     Application.LoadLevel("SampleScene");
   }
     // Start is called before the first frame update

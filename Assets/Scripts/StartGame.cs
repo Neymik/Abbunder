@@ -6,12 +6,15 @@ using MLAPI.Transports.UNET;
 
 public class StartGame : MonoBehaviour
 {
-  public GameObject obj;
-
     // Start is called before the first frame update
     void Start()
     {
       NetworkManager.Singleton.GetComponent<UNetTransport>().ConnectAddress = IPManager.ip;
+      if (IPManager.game == "join") {
+        NetworkManager.Singleton.StartClient();
+      } else if (IPManager.game == "host") {
+        NetworkManager.Singleton.StartHost();
+      }
     }
 
     // Update is called once per frame

@@ -6,4 +6,5 @@ public static class IPManager
 {
     public static string ip;
     public static string name;
+    public static string game;
 }
