@@ -36,6 +36,8 @@ namespace Networking {
             }
         }
 
+        
+
         [ServerRpc]
         void SubmitSetWorldObjectsServerRpc(ServerRpcParams rpcParams = default)
         {
@@ -50,8 +52,6 @@ namespace Networking {
         void Update()
         {
             transform.position = Position.Value;
-
-            
 
         }
     }
