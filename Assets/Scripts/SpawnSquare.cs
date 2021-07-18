@@ -24,7 +24,7 @@ public class SpawnSquare : MonoBehaviour
 
         } else {
 
-            //WorldObjects.Delete(intX, intY);
+            WorldObjects.Delete(intX, intY);
 
         }
 
