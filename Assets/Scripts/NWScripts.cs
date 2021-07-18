@@ -28,7 +28,7 @@ namespace Networking {
         }
 
 
-        [ClientRpc ]
+        [ClientRpc]
         void SpawnActionClientRpc(float x, float y, ClientRpcParams rpcParams = default)
         {
             Debug.Log("SpawnActionClientRpc");
@@ -39,15 +39,18 @@ namespace Networking {
 
         }
 
-        [ServerRpc]
+        [ServerRpc(RequireOwnership = false)]
         void SpawnActionServerRpc(float x, float y, ServerRpcParams rpcParams = default)
         {
-            Debug.Log("SpawnActionServerRpc");
-            Vector2 worldPosition = new Vector2(x, y);
-            SpawnSquare.Spawn(worldPosition, newObj);
+            Debug.Log("SpawnActionServerRpc IsServer " + NetworkManager.Singleton.IsServer);
 
             if (NetworkManager.Singleton.IsServer) {
                 SpawnActionClientRpc(x, y);
+
+            } else {
+                
+                Vector2 worldPosition = new Vector2(x, y);
+                SpawnSquare.Spawn(worldPosition, newObj);
             }
             
         }
