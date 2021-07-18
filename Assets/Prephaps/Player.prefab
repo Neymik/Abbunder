@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae66de656777d0478eee0085933ed2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newObj: {fileID: 6075370372871252734, guid: 35eeaab9537ac6e46af847265a5808f0, type: 3}
   Position:
     m_InternalValue: {x: 0, y: 0}
 --- !u!114 &6007477672287212289
