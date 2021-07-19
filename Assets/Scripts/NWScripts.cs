@@ -31,11 +31,11 @@ namespace Networking {
         [ClientRpc]
         void SpawnActionClientRpc(float x, float y, ClientRpcParams rpcParams = default)
         {
-            Debug.Log("SpawnActionClientRpc");
-            Vector2 worldPosition = new Vector2(x, y);
-            SpawnSquare.Spawn(worldPosition, newObj);
+            // Debug.Log("SpawnActionClientRpc");
+            // Vector2 worldPosition = new Vector2(x, y);
+            // SpawnSquare.Spawn(worldPosition, newObj);
 
-            
+
 
         }
 
@@ -48,17 +48,17 @@ namespace Networking {
                 SpawnActionClientRpc(x, y);
 
             } else {
-                
+
                 Vector2 worldPosition = new Vector2(x, y);
                 SpawnSquare.Spawn(worldPosition, newObj);
             }
-            
+
         }
 
         // Start is called before the first frame update
         void Start()
         {
-            
+
         }
 
         // Update is called once per frame
