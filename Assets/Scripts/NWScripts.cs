@@ -34,9 +34,6 @@ namespace Networking {
             // Debug.Log("SpawnActionClientRpc");
             // Vector2 worldPosition = new Vector2(x, y);
             // SpawnSquare.Spawn(worldPosition, newObj);
-
-            
-
         }
 
         [ServerRpc(RequireOwnership = false)]
