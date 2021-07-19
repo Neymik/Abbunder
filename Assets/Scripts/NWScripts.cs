@@ -66,19 +66,19 @@ namespace Networking {
         {
             if (Input.GetMouseButtonDown(0)) {
 
-                    Debug.Log("Update");
+                Debug.Log("Update");
 
-                    Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-                    Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+                Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
 
-                    worldPosition.x = (float)(Math.Round(worldPosition.x));
-                    worldPosition.y = (float)(Math.Round(worldPosition.y));
+                worldPosition.x = (float)(Math.Round(worldPosition.x));
+                worldPosition.y = (float)(Math.Round(worldPosition.y));
 
-                    NetworkingSpawn(worldPosition.x, worldPosition.y);
+                NetworkingSpawn(worldPosition.x, worldPosition.y);
 
-                    Debug.Log("UpdateEnd");
+                Debug.Log("UpdateEnd");
 
-                }
+            }
         }
     }
 }

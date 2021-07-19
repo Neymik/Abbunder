@@ -51,8 +51,30 @@ namespace Networking {
 
         void Update()
         {
-            transform.position = Position.Value;
+
+            if (IsLocalPlayer) {
+
+                playerMove ();
+
+            }
 
         }
+
+        void playerMove () {
+
+            if (Input.GetMouseButtonDown(0)) {
+
+                Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+
+                worldPosition.x = (float)(Math.Round(worldPosition.x));
+                worldPosition.y = (float)(Math.Round(worldPosition.y));
+
+                transform.position = worldPosition;
+
+            }
+
+        }
+
     }
 }

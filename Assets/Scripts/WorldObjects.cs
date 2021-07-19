@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using MLAPI;
+using MLAPI.Messaging;
+using MLAPI.NetworkVariable;
 
 
 public class WorldObjects : MonoBehaviour {
@@ -32,6 +34,7 @@ public class WorldObjects : MonoBehaviour {
         pos.y = y;
 
         obj = Instantiate(obj, pos, Quaternion.identity);
+        obj.GetComponent<NetworkObject>().Spawn();
 
         Dictionary<int, GameObject> jopa;
 
