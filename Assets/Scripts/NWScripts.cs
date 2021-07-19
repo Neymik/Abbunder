@@ -19,7 +19,7 @@ namespace Networking {
 
             if (NetworkManager.Singleton.IsServer)
             {
-                SpawnActionClientRpc(x, y);
+                ServerSpawn (x, y);
             }
             else
             {
@@ -31,9 +31,9 @@ namespace Networking {
         [ClientRpc]
         void SpawnActionClientRpc(float x, float y, ClientRpcParams rpcParams = default)
         {
-            Debug.Log("SpawnActionClientRpc");
-            Vector2 worldPosition = new Vector2(x, y);
-            SpawnSquare.Spawn(worldPosition, newObj);
+            // Debug.Log("SpawnActionClientRpc");
+            // Vector2 worldPosition = new Vector2(x, y);
+            // SpawnSquare.Spawn(worldPosition, newObj);
 
             
 
@@ -45,7 +45,7 @@ namespace Networking {
             Debug.Log("SpawnActionServerRpc IsServer " + NetworkManager.Singleton.IsServer);
 
             if (NetworkManager.Singleton.IsServer) {
-                SpawnActionClientRpc(x, y);
+                ServerSpawn (x, y);
 
             } else {
                 
@@ -53,6 +53,11 @@ namespace Networking {
                 SpawnSquare.Spawn(worldPosition, newObj);
             }
             
+        }
+
+        void ServerSpawn (float x, float y) {
+            Vector2 worldPosition = new Vector2(x, y);
+            SpawnSquare.Spawn(worldPosition, newObj);
         }
 
         // Start is called before the first frame update
